@@ -12,7 +12,7 @@ interface RetrofitService {
         getAllMovies()
     }
 
-    @GET("2f06b453-8375-43cf-861a-06e95a951328")//2f06b453-8375-43cf-861a-06e95a951328//movielist.json
+    @GET("2f06b453-8375-43cf-861a-06e95a951328")
     fun getAllMovies() : Call<Product>
 
     companion object {
@@ -24,7 +24,6 @@ interface RetrofitService {
             if (retrofitService == null) {
                 val retrofit = Retrofit.Builder()
                     .baseUrl("https://run.mocky.io/v3/")
-                    //.baseUrl("http://howtodoandroid-com.ibrave.host/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build()
                 retrofitService = retrofit.create(RetrofitService::class.java)
