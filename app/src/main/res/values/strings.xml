@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EDG</string>
+    <string name="products">Products</string>
+    <string name="favorites">Favorites</string>
+    <string name="product_details">Product Details</string>
+    <string name="edg">EDG</string>
+</resources>
